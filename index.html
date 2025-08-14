@@ -7,10 +7,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Product Instructions</title>
 </head>
-<body class="relative text-gray-100 p-4 sm:p-8 min-h-screen flex flex-col items-center font-mono bg-gradient-to-br from-[#0d57a3] via-[#1e8fff] to-[#8fe6ff]">
-  <div class="pointer-events-none absolute inset-0 -z-10">
+<body class="relative text-gray-100 p-4 sm:p-8 min-h-screen flex flex-col items-center font-mono bg-gradient-to-br from-[#0d57a3] via-[#1e8fff] to-[#8fe6ff] overflow-x-hidden">
+  <div class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(0,0,0,0.25),transparent_58%)]"></div>
-    <div class="absolute top-16 left-1/2 -translate-x-1/2 w-[1200px] h-[1200px] bg-[radial-gradient(circle,rgba(180,235,255,0.55),transparent_70%)]"></div>
+    <div class="absolute top-16 left-1/2 -translate-x-1/2 w-[120vmax] h-[120vmax] bg-[radial-gradient(circle,rgba(180,235,255,0.55),transparent_70%)]"></div>
   </div>
   <img 
     src="images/fortress-logo-transparent.png" 
@@ -254,7 +254,7 @@
   }
   </script>
   <style>
-    html, body { touch-action: manipulation; }
+    html, body { touch-action: manipulation; overflow-x: hidden; overscroll-behavior-x: none; }
     @media print {
       body { background: #ffffff !important; }
       [data-print-hide] { display: none !important; }
