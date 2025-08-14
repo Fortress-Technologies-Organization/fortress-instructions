@@ -12,18 +12,22 @@
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_0%_100%,rgba(0,0,0,0.25),transparent_58%)]"></div>
     <div class="absolute top-16 left-1/2 -translate-x-1/2 w-[120vmax] h-[120vmax] bg-[radial-gradient(circle,rgba(180,235,255,0.55),transparent_70%)]"></div>
   </div>
+
   <img 
     src="images/fortress-logo-transparent.png" 
     alt="Fortress Technologies Logo" 
     class="mb-4 object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.45)]"
     style="max-width:240px;height:auto;"
   />
+
   <div class="flex flex-col items-center mb-6">
     <span class="text-4xl font-extrabold tracking-wide text-gray-100"
       style="letter-spacing:0.08em;text-shadow:0 0 2px #000,1px 0 0 #000,-1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000;">FORTRESS</span>
     <span class="text-lg font-bold tracking-widest text-blue-100"
       style="letter-spacing:0.3em;text-shadow:0 0 2px #000,1px 0 0 #000,-1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000;">TECHNOLOGIES</span>
   </div>
+
+  <!-- CONFIGURATION -->
   <div class="mt-6 w-full max-w-md bg-blue-950 bg-opacity-90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 flex flex-col items-center border-2 border-blue-400">
     <div class="w-full border-b border-blue-400 pb-2 mb-4">
       <h2 class="text-xl font-bold tracking-widest text-center text-blue-200 letter-spacing-widest">CONFIGURATION</h2>
@@ -55,16 +59,27 @@
 
       <div class="flex justify-between items-center py-1 border-b border-blue-800">
         <span class="font-semibold">FAILED PASSWORD WIPE</span>
-        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">5 ATTEMPTS</span>
+        <span class="bg-blue-800 bg-opacity-60 px-3 py-1 rounded text-blue-100 font-bold tracking-wider">10 ATTEMPTS</span>
       </div>
       <div class="text-[10px] -mt-1 text-blue-300 tracking-wide">Wipes after this many incorrect entries.</div>
     </div>
     <div class="w-full border-t border-blue-400 mt-4"></div>
   </div>
 
-  <!-- Instructions Section -->
+  <!-- REMINDER -->
+  <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-5 border-2 border-blue-400 relative">
+    <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center px-4 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-sm tracking-wide shadow-lg border-2 border-blue-800 z-10">
+      NOTE
+    </div>
+    <h3 class="text-lg font-bold text-blue-200 mb-2 tracking-widest">Friendly Reminder</h3>
+    <p class="text-sm text-blue-100 font-mono">
+      The camera roll contains your <span class="font-bold text-blue-200">Threema ID</span> and <span class="font-bold text-blue-200">Mullvad account number</span>. Open <span class="font-bold text-blue-200">Photos/Gallery</span> to view.
+    </p>
+  </div>
+
+  <!-- INSTRUCTIONS -->
   <div class="mt-8 w-full max-w-4xl space-y-8">
-    <!-- Step 1 -->
+    <!-- STEP 1 -->
     <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 flex flex-col items-start mt-8 w-full">
       <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
         1
@@ -93,7 +108,8 @@
         </li>
       </ol>
     </div>
-    <!-- Step 2 -->
+
+    <!-- STEP 2 -->
     <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
       <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
         2
@@ -131,35 +147,45 @@
         </div>
       </div>
     </div>
-    <!-- Step 3 -->
-    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 flex flex-col items-start mt-8 w-full">
+
+    <!-- STEP 3 -->
+    <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
       <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
         3
       </div>
-      <ol class="list-none text-blue-100 text-base font-mono w-full m-0">
-        <li>
-          Once in <span class="font-bold text-blue-200">Settings</span>, scroll to <span class="font-bold text-blue-200">Security &amp; privacy</span> and tap it. Tap <span class="font-bold text-blue-200">Device unlock</span>, then tap <span class="font-bold text-blue-200">Screen lock</span>. When prompted, enter the current device PIN <span class="font-bold text-yellow-200">(000000)</span>. Select <span class="font-bold text-blue-200">PIN</span>, then set and confirm your <span class="font-bold" style="color:#00FF00;">new</span> <span class="font-bold text-blue-200">PIN</span>.
-          <div class="relative flex justify-center items-center mt-4">
-            <video 
-              class="rounded-lg shadow-lg border-2 border-blue-400 w-full max-w-xs"
-              controls
-              playsinline
-              preload="metadata"
-              poster="images/set-device-password-poster.jpg"
-              src="videos/set-device-password.mp4"
-              aria-label="Set Device PIN Video"
-            ></video>
-          </div>
+      <div class="flex flex-col lg:flex-row gap-8 sm:gap-12 items-stretch">
+        <div class="w-full md:w-[420px] md:min-h-[560px] grid grid-rows-[auto_1fr_auto]">
+          <ol class="list-decimal list-inside space-y-2 text-blue-100 text-base font-mono pr-2">
+            <li>In <span class="font-bold text-blue-200">Settings</span>, scroll to <span class="font-bold text-blue-200">Security &amp; privacy</span> and tap it.</li>
+            <li>Tap <span class="font-bold text-blue-200">Device unlock</span>.</li>
+            <li>Tap <span class="font-bold text-blue-200">Screen lock</span>.</li>
+            <li>Enter the current PIN <span class="font-bold text-yellow-200">000000</span> when prompted.</li>
+            <li>Select <span class="font-bold text-blue-200">PIN</span>.</li>
+            <li>Set and confirm your <span class="font-bold" style="color:#00FF00;">new</span> <span class="font-bold text-blue-200">PIN</span>.</li>
+          </ol>
+          <div></div>
           <div class="pt-6">
             <hr class="border-blue-800 mb-2 w-72 mx-auto" />
-            <div class="text-xs text-blue-300 italic break-words text-center px-2">
+            <p class="text-xs text-blue-300 italic leading-snug text-center px-2">
               <span class="font-semibold text-yellow-200">Tip:</span> Use at least a six‑digit PIN—ideally eight to ten digits; a long alphanumeric password provides stronger protection.
-            </div>
+            </p>
           </div>
-        </li>
-      </ol>
+        </div>
+        <div class="flex-1 flex justify-center items-end">
+          <video 
+            class="rounded-lg shadow-lg border-2 border-blue-400 w-full max-w-xs lg:max-w-[520px]"
+            controls
+            playsinline
+            preload="metadata"
+            poster="images/set-device-password-poster.jpg"
+            src="videos/set-device-password.mp4"
+            aria-label="Set Device PIN Video"
+          ></video>
+        </div>
+      </div>
     </div>
-    <!-- Step 4 -->
+
+    <!-- STEP 4 -->
     <div class="relative bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 mt-8 w-full">
       <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-xl shadow-lg border-2 border-blue-800 z-10">
         4
@@ -206,7 +232,7 @@
     </div>
   </div>
 
-  <!-- Setup Complete Notice -->
+  <!-- SETUP COMPLETE -->
   <div id="setup-complete" class="mt-10 w-full max-w-md bg-blue-950 bg-opacity-90 backdrop-blur-sm rounded-xl border-2 border-green-400 shadow p-5 text-center">
     <div class="flex flex-col items-center space-y-3">
       <div class="w-14 h-14 flex items-center justify-center rounded-full bg-green-500 text-blue-950 font-extrabold text-2xl shadow-inner select-none">✓</div>
@@ -225,7 +251,7 @@
     </div>
   </div>
 
-  <!-- Random PIN Generator Section -->
+  <!-- RANDOM PIN GENERATOR -->
   <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 sm:p-6 border-2 border-blue-400 text-center relative">
     <div class="absolute -top-5 left-3 sm:-left-5 flex items-center justify-center px-4 h-10 rounded-full bg-blue-400 text-blue-950 font-bold text-sm tracking-wide shadow-lg border-2 border-blue-800 z-10">
       OPTIONAL
@@ -250,6 +276,7 @@
       </div>
     </div>
   </div>
+
   <script>
   function generatePin() {
     let pin = '';
@@ -259,6 +286,7 @@
     document.getElementById('pinResult').textContent = pin;
   }
   </script>
+
   <style>
     html, body { touch-action: manipulation; overflow-x: hidden; overscroll-behavior-x: none; }
     @media print {
@@ -269,7 +297,7 @@
     }
   </style>
 
-  <!-- Contact Information Section -->
+  <!-- CONTACT -->
   <div class="mt-8 w-full max-w-md bg-blue-950 bg-opacity-80 backdrop-blur-sm rounded-xl shadow p-4 border-2 border-blue-400 text-center">
     <div class="text-blue-200 font-mono text-sm">
       <div class="mb-1">
